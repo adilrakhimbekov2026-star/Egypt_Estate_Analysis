@@ -6,6 +6,7 @@ By Adil Rakhimbekov
 ## Project overview
 
 This repository contains a small project for cleaning, exploring and predicting housing prices in Egypt using polynomial Ridge regression.
+The project was created as part of my process of learning and practicing correlation–regression analysis techniques on real data.
 
 ### 1. Data preprocessing
 - Extract city names from unstructured `location` text.  
