@@ -1,33 +1,36 @@
 # Egypt_Estate_Analysis
-Exploratory and predictive analysis of Egyptian real estate listings using correlation–regression modeling.
-by Adil Rakhimbekov
 
+Exploratory and predictive analysis of Egyptian real estate listings using correlation–regression modeling.  
+By Adil Rakhimbekov
 
-## Project Overview
+## Project overview
 
-1. **Data Preprocessing**
-   - Extracted city names from unstructured location data.  
-   - Removed invalid and extreme values.  
-   - Converted textual fields (`price`, `size`, `bedrooms`) into numeric form.  
+This repository contains a small project for cleaning, exploring and predicting housing prices in Egypt using polynomial Ridge regression.
 
-2. **Modeling**
-   - Polynomial **Ridge Regression (degree = 3)** for nonlinear relationships.  
-   - Train/test split for validation.  
-   - Evaluation using **R²** and **MSE** metrics.  
+### 1. Data preprocessing
+- Extract city names from unstructured `location` text.  
+- Remove invalid and extreme values.  
+- Convert textual fields (`price`, `size`, `bedrooms`) to numeric types.
 
-3. **Prediction**
-   - The model predicts housing price based on user input: city, size, and number of bedrooms.  
+### 2. Modeling
+- Polynomial **Ridge Regression** (degree = 3) to capture nonlinear effects.  
+- Train/test split for validation.  
+- Evaluation using **R²** and **MSE**.
 
-4. **Visualization**
-   - Scatterplot with fitted regression curve.  
-   - Average prices per city.  
-   - Density plots for `price` vs. `size` and `bedrooms`.
+### 3. Prediction
+- Model predicts price given: **city**, **size (sqm)** and **number of bedrooms**.
 
-## Example Workflow:
+### 4. Visualization
+- Scatter plot with fitted prediction curve.  
+- Average prices per city.  
+- Density plots for `price` vs `size` and `bedrooms`.
 
-Notebooks are divided into 3 sections: data preprocessing; correlation-regression prognose by Ridge; # some visualization (might take some time)
+## Usage
 
-Open the notebook in Jupyter and run all cells step by step:
+Notebooks are split into three parts: data preprocessing; correlation–regression (Ridge); visualizations.  
+Run the preprocessing notebook first, then the modeling and visualization notebooks.
+
+Open and run the notebook in Jupyter:
 
 ```bash
 jupyter notebook real_estate_analysis.ipynb
